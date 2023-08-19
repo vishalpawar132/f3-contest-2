@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postal Codes</title>
+    <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+<body>
+    <div id="homepage">
+    <div id="illustration">
+
+        <h2>Post Office Application</h2>
+        <p>This application allows you to extract nearest post-offices around you</p>
+        <img src="images/Notify-rafiki.png" alt="Postal-office-image here" style="height: 300px; width: 300px;">
+
+    </div>
+    <div id="getstarted">
+          <h2 id="ipaddress">Your current IP Address is : <span class="ipwala" id="ipaddy"></span></h2>
+          <button id="btn-getstarted">Get Started</button>
+    </div>
+</div>
+<div id="secondpage">
+    <div id="afterclick">
+        <div id="afterclickip">
+            <h3 class="ipaddress2">Your current IP Address is : <span  class="ipwala"id="ipaddy2"></span></h2>
+        </div>
+        <div id="latlong">
+            <div id="lat"> Latitude :<span id="latspan"></span>  </div> 
+
+            
+            <div id="city"> City : <span id="cityspan"></span> </div>
+            <div id="org"> Organisation : <span id="orgspan"></span></div>
+            <div id="long">Longitude: <span id="longspan"></span></div>
+            <div id="region">Region: <span id="regionspan"></span></div>
+            <div id="hostname">hostname:<span id="hostnamespan"></span></div>
+
+        </div>
+    </div>
+
+    <div id="gmap">
+        <h2>Your Current location</h2>
+        <iframe id="map" width="360" height="270" frameborder="0" style="border:0"></iframe>
+    </div>
+
+    <div id="moreinfo">
+        <h2 id="moreyou">More information about you</h2>
+<div id="moreinfoflex">
+       <div> <h3>Time Zone: <span id="timezone"></span></h3></div>
+       <div> <h3>Date & Time: <span id="datetime"></span></h3></div>
+       <div> <h3>Pincode: <span id="pincode"></span></h3></div>
+       <div> <h3>Message: Number of pincodes found: <span id="pinfound"> </span></h3></div>
+    </div>
+    </div>
+     <h2 id="postofficenearyou"> Post offices Near You</h2>
+    <input type="text" id="search" placeholder="Search by name">
+
+    <div id="searchresult">
+        <div class="result">
+            <h3>Name : <span id="searchname"></span> </h3>
+            <h3>Branch : <span id="branch"></span> </h3>
+            <h3>Delivery Status : <span id="deliverystatus"></span> </h3>
+            <h3>District : <span id="district"></span> </h3>
+            <h3>Division : <span id="division"></span> </h3>
+        </div>
+        
+    </div>
+
+</div>
+</body>
+</html>
